@@ -50,7 +50,7 @@ class MainActivityTest {
             Espresso.onView(withId(R.id.btn_calculate)).perform(ViewActions.click())
             delay(3000)
             Espresso.onView(withId(R.id.resultTv))
-                .check(ViewAssertions.matches(ViewMatchers.withText("")))
+                .check(ViewAssertions.matches(ViewMatchers.withText("0")))
 
         }
     }
